@@ -238,6 +238,8 @@ SDO</text>
 <circle x="14.582140625" y="7.1501" radius="0.0254" width="0.4064" layer="21"/>
 <wire x1="1.4732" y1="7.5692" x2="2.2098" y2="6.8326" width="0.254" layer="22"/>
 <wire x1="2.1844" y1="7.5692" x2="1.4478" y2="6.8326" width="0.254" layer="22"/>
+<text x="11.2522" y="18.9484" size="0.3048" layer="51" font="vector" ratio="15" align="top-left">V-score for the end user if they want to
+remove more than 1/3 of the board size</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
