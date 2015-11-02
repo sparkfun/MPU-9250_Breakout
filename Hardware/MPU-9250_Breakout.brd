@@ -187,12 +187,12 @@ SDO</text>
 <dimension x1="10.922" y1="0" x2="14.224" y2="4.064" x3="23.7236" y3="2.032" textsize="1.778" textratio="15" layer="47" dtype="vertical" unit="inch"/>
 <text x="2.3368" y="3.937" size="0.8128" layer="21" font="vector" ratio="15" align="top-left">SJ2</text>
 <text x="0.3556" y="7.7978" size="0.8128" layer="21" font="vector" ratio="15" align="top-left">SJ1</text>
-<wire x1="0.9652" y1="8.8646" x2="2.6162" y2="8.8646" width="0.254" layer="22"/>
-<wire x1="2.3622" y1="9.3726" x2="2.3622" y2="8.2296" width="0.254" layer="22" curve="180"/>
-<wire x1="2.3622" y1="8.2296" x2="2.1082" y2="8.1026" width="0.254" layer="22"/>
-<wire x1="2.3622" y1="8.2296" x2="2.2352" y2="8.4836" width="0.254" layer="22"/>
-<wire x1="0.9652" y1="8.8646" x2="1.2192" y2="9.1186" width="0.254" layer="22"/>
-<wire x1="0.9652" y1="8.8646" x2="1.2192" y2="8.6106" width="0.254" layer="22"/>
+<wire x1="2.3622" y1="8.9154" x2="1.0922" y2="8.9154" width="0.254" layer="22"/>
+<wire x1="1.9304" y1="9.4234" x2="1.9304" y2="8.2804" width="0.254" layer="22" curve="180"/>
+<wire x1="1.9304" y1="8.2804" x2="1.6764" y2="8.1534" width="0.254" layer="22"/>
+<wire x1="1.9304" y1="8.2804" x2="1.8034" y2="8.5344" width="0.254" layer="22"/>
+<wire x1="2.3622" y1="8.9154" x2="2.1082" y2="8.6614" width="0.254" layer="22"/>
+<wire x1="2.3622" y1="8.9154" x2="2.1082" y2="9.1694" width="0.254" layer="22"/>
 <wire x1="1.8288" y1="11.684" x2="1.8288" y2="9.906" width="0.254" layer="22"/>
 <wire x1="2.4638" y1="10.287" x2="1.1938" y2="10.287" width="0.254" layer="22" curve="180"/>
 <wire x1="1.1938" y1="10.287" x2="1.0668" y2="10.541" width="0.254" layer="22"/>
@@ -201,8 +201,8 @@ SDO</text>
 <wire x1="1.8288" y1="11.684" x2="1.5748" y2="11.43" width="0.254" layer="22"/>
 <wire x1="2.1082" y1="11.4046" x2="1.5494" y2="11.4046" width="0.254" layer="22"/>
 <wire x1="1.4224" y1="10.414" x2="1.0668" y2="10.541" width="0.254" layer="22"/>
-<wire x1="2.1082" y1="8.1026" x2="2.2352" y2="8.4836" width="0.254" layer="22"/>
-<wire x1="1.2192" y1="8.6106" x2="1.2192" y2="9.1186" width="0.254" layer="22"/>
+<wire x1="1.6764" y1="8.1534" x2="1.8034" y2="8.5344" width="0.254" layer="22"/>
+<wire x1="2.1082" y1="9.1694" x2="2.1082" y2="8.6614" width="0.254" layer="22"/>
 <text x="3.6068" y="10.033" size="1.016" layer="22" font="vector" ratio="20" rot="SMR0">Y</text>
 <text x="3.6068" y="8.382" size="1.016" layer="22" font="vector" ratio="20" rot="SMR0">X</text>
 <text x="3.8608" y="6.604" size="1.016" layer="22" font="vector" ratio="20" rot="SMR0">Z</text>
