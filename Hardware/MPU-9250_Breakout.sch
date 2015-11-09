@@ -7479,7 +7479,9 @@ Various fiducial points for machine vision alignment.</description>
 <connect gate="G$1" pin="VDDIO" pad="1 8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13192"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9184,12 +9186,14 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <plain>
 <text x="165.608" y="11.43" size="2.54" layer="94" ratio="5">&gt;DESIGNER</text>
 <text x="236.982" y="7.112" size="2.794" layer="94" ratio="5">&gt;VERSION</text>
-<text x="127" y="45.72" size="1.778" layer="97" font="vector">AD0/SDO defualts to 0V.  This sets the
+<text x="127" y="45.72" size="1.778" layer="97" font="vector">AD0/SDO defaults to 0V.  This sets the
 I2C address to 0b1101000 and leaves
 the AD0/SDO PTH disconnected.</text>
 <text x="101.6" y="50.8" size="1.778" layer="97" font="vector">AD0 sets LSB
 of address</text>
 <text x="50.8" y="96.52" size="1.778" layer="97" font="vector" align="bottom-center">Set VDD and VDDIO equal by default</text>
+<text x="50.8" y="109.22" size="1.778" layer="97" font="vector" align="bottom-center">VDD 2.4 to 3.6 V
+VDDIO 1.71 to VDD</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
