@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7490,7 +7490,7 @@ Various fiducial points for machine vision alignment.</description>
 </library>
 <library name="Testing">
 <packages>
-<package name="QFN24_PAD">
+<package name="QFN24">
 <description>Built for the MPU-9250 using guidelines found in http://cds.linear.com/docs/en/packaging/Carsem%20MLP%20users%20guide.pdf</description>
 <smd name="P$1" x="-0.2" y="1.3" dx="0.25" dy="0.3" layer="1" roundness="75"/>
 <smd name="22" x="-0.2" y="1.55" dx="0.25" dy="0.5" layer="1"/>
@@ -7502,12 +7502,6 @@ Various fiducial points for machine vision alignment.</description>
 <smd name="24" x="-1" y="1.55" dx="0.25" dy="0.5" layer="1"/>
 <smd name="P$11" x="-0.6" y="1.3" dx="0.25" dy="0.3" layer="1" roundness="75"/>
 <smd name="23" x="-0.6" y="1.55" dx="0.25" dy="0.5" layer="1"/>
-<smd name="P$13" x="0.325" y="0" dx="1.1" dy="1.59" layer="1" roundness="28" cream="no"/>
-<smd name="P$14" x="-0.592" y="0.512" dx="0.3" dy="0.5" layer="1" rot="R315" cream="no"/>
-<smd name="CENTER" x="0" y="0" dx="0.25" dy="0.25" layer="1" cream="no"/>
-<smd name="P$15" x="-0.27" y="0" dx="0.5" dy="1.59" layer="1" cream="no"/>
-<smd name="DBBADFE" x="-0.675" y="0.24" dx="0.4" dy="0.4" layer="1" cream="no"/>
-<smd name="DBBADFE1" x="-0.575" y="-0.195" dx="0.6" dy="1.2" layer="1" roundness="50" cream="no"/>
 <smd name="P$16" x="0.2" y="-1.3" dx="0.25" dy="0.3" layer="1" roundness="75" rot="R180"/>
 <smd name="10" x="0.2" y="-1.55" dx="0.25" dy="0.5" layer="1" rot="R180"/>
 <smd name="P$18" x="-0.2" y="-1.3" dx="0.25" dy="0.3" layer="1" roundness="75" rot="R180"/>
@@ -7619,16 +7613,14 @@ Various fiducial points for machine vision alignment.</description>
 <smd name="P$67" x="-1.175" y="-0.97" dx="0.05" dy="0.05" layer="1"/>
 <smd name="P$68" x="-1.26" y="-0.94" dx="0.08" dy="0.13" layer="1"/>
 <smd name="P$69" x="-1.32" y="-1.06" dx="0.08" dy="0.13" layer="1"/>
-<circle x="-0.45" y="0.35" radius="0.3" width="0" layer="31"/>
-<circle x="0.45" y="0.35" radius="0.3" width="0" layer="31"/>
-<circle x="-0.45" y="-0.35" radius="0.3" width="0" layer="31"/>
-<circle x="0.45" y="-0.35" radius="0.3" width="0" layer="31"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0" layer="49"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0" layer="49"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0" layer="49"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0" layer="49"/>
 <smd name="P$2" x="-1.3" y="0.2" dx="0.25" dy="0.3" layer="1" roundness="75" rot="R90"/>
 <smd name="P$4" x="-1.3" y="0.6" dx="0.25" dy="0.3" layer="1" roundness="75" rot="R90"/>
+<rectangle x1="-1.143" y1="-1.143" x2="1.143" y2="1.143" layer="42"/>
+<rectangle x1="-1.143" y1="-1.143" x2="1.143" y2="1.143" layer="41"/>
 </package>
 </packages>
 <symbols>
@@ -7662,14 +7654,14 @@ Various fiducial points for machine vision alignment.</description>
 <gate name="G$1" symbol="MPU-9250" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="QFN24_PAD">
+<device name="" package="QFN24">
 <connects>
 <connect gate="G$1" pin="!CS" pad="22"/>
 <connect gate="G$1" pin="AD0/SDO" pad="9"/>
 <connect gate="G$1" pin="AUX_CL" pad="7"/>
 <connect gate="G$1" pin="AUX_DA" pad="21"/>
 <connect gate="G$1" pin="FSYNC" pad="11"/>
-<connect gate="G$1" pin="GND" pad="18 20 CENTER"/>
+<connect gate="G$1" pin="GND" pad="18 20"/>
 <connect gate="G$1" pin="INT" pad="12"/>
 <connect gate="G$1" pin="REGOUT" pad="10"/>
 <connect gate="G$1" pin="SCL/SCLK" pad="23"/>
