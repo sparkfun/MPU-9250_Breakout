@@ -9354,7 +9354,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </libraries>
 <attributes>
 <attribute name="DESIGNER" value="Brent Wilkins"/>
-<attribute name="VERSION" value="v10"/>
+<attribute name="VERSION" value="v11"/>
 </attributes>
 <variantdefs>
 </variantdefs>
