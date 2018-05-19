@@ -237,6 +237,9 @@ class MPU9250
     void getMres();
     void getGres();
     void getAres();
+    void setGscale(int scale);
+    void setAscale(int scale);
+    void setMscale(int scale);
     void readAccelData(int16_t *);
     void readGyroData(int16_t *);
     void readMagData(int16_t *);
