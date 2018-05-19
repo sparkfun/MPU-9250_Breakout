@@ -61,20 +61,20 @@ void MPU9250::getAres() {
   }
 }
 
-void MPU9250::setGScale(uint8_t scale)
+void MPU9250::setGscale(int scale)
 {
   switch(scale)
   {
-    case GFS_250DPS: 
+    case 250: 
           Gscale = GFS_250DPS;
           break;
-    case GFS_500DPS: 
+    case 500: 
           Gscale = GFS_500DPS;
           break;
-    case GFS_1000DPS: 
+    case 1000: 
           Gscale = GFS_1000DPS;
           break;
-    case GFS_2000DPS: 
+    case 2000: 
           Gscale = GFS_2000DPS;
           break;
     default: 
@@ -86,20 +86,20 @@ void MPU9250::setGScale(uint8_t scale)
   writeByte(MPU9250_ADDRESS, GYRO_CONFIG, c ); // Write new GYRO_CONFIG value to register
 }
 
-void MPU9250::setAScale(uint8_t scale)
+void MPU9250::setAscale(int scale)
 {
   switch(scale)
   {
-    case AFS_2G: 
+    case 2: 
           Ascale = AFS_2G;
           break;
-    case AFS_4G: 
+    case 4: 
           Ascale = AFS_4G;
           break;
-    case AFS_8G: 
+    case 8: 
           Ascale = AFS_8G;
           break;
-    case AFS_16G: 
+    case 16: 
           Ascale = AFS_16G;
           break;
     default: 
@@ -111,14 +111,14 @@ void MPU9250::setAScale(uint8_t scale)
   writeByte(MPU9250_ADDRESS, ACCEL_CONFIG, c); // Write new ACCEL_CONFIG register value
 }
 
-void MPU9250::setMScale(uint8_t scale)
+void MPU9250::setMscale(int scale)
 {
   switch(scale)
   {
-    case MFS_14BITS: 
+    case 14: 
           Mscale = MFS_14BITS;
           break;
-    case MFS_16BITS: 
+    case 16: 
           Mscale = MFS_16BITS;
           break;
     default:
@@ -127,7 +127,6 @@ void MPU9250::setMScale(uint8_t scale)
 
   writeByte(AK8963_ADDRESS, AK8963_CNTL, Mscale << 4 | Mmode); // Set new magnetometer data resolution and sample ODR
 }
-
 
 void MPU9250::readAccelData(int16_t * destination)
 {
