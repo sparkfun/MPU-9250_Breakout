@@ -14,6 +14,11 @@ Repository Contents
 * **/Hardware** &mdash; All Eagle design files
 * **/Production** &mdash; Test bed files and production panel files
 
+Documentation
+--------------
+* **[Library](https://github.com/sparkfun/SparkFun_MPU-9250-DMP_Arduino_Library)** - Arduino library for the MPU-9250 Breakout.
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/mpu-9250-hookup-guide)** - Basic hookup guide for the MPU-9250 Breakout.
+
 License Information
 -------------------
 The hardware is released under [Creative Commons Share-alike 4.0](http://creativecommons.org/licenses/by-sa/4.0/).  
