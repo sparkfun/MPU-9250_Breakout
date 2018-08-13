@@ -18,6 +18,7 @@ Documentation
 --------------
 * **[Library](https://github.com/sparkfun/SparkFun_MPU-9250-DMP_Arduino_Library)** - Arduino library for the MPU-9250 Breakout.
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/mpu-9250-hookup-guide)** - Basic hookup guide for the MPU-9250 Breakout.
+* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts/blob/master/products/13762_sfe_imu_sensor_9250.fzpz)** - Fritzing diagrams for SparkFun products.
 
 License Information
 -------------------
