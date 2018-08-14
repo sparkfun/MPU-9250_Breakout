@@ -255,9 +255,9 @@ void loop()
   // modified to allow any convenient orientation convention. This is ok by
   // aircraft orientation standards! Pass gyro rate as rad/s
 //  MadgwickQuaternionUpdate(ax, ay, az, gx*PI/180.0f, gy*PI/180.0f, gz*PI/180.0f,  my,  mx, mz);
-  MahonyQuaternionUpdate(myIMU.ax, myIMU.ay, myIMU.az, myIMU.gx*DEG_TO_RAD,
-                         myIMU.gy*DEG_TO_RAD, myIMU.gz*DEG_TO_RAD, myIMU.my,
-                         myIMU.mx, myIMU.mz, myIMU.deltat);
+  MahonyQuaternionUpdate(myIMU.ay, myIMU.ax, -myIMU.az, myIMU.gy * DEG_TO_RAD,
+                         myIMU.gx * DEG_TO_RAD, -myIMU.gz * DEG_TO_RAD, myIMU.mx,
+                         myIMU.my, myIMU.mz, myIMU.deltat);
 
   if (!AHRS)
   {
