@@ -207,8 +207,13 @@ class MPU9250
     uint8_t Mscale = MFS_16BITS;
     // 2 for 8 Hz, 6 for 100 Hz continuous magnetometer data read
     uint8_t Mmode = 0x02;
-
+  protected:
+    void writeByteWire(uint8_t, uint8_t, uint8_t);
+    void writeByteSPI(uint8_t, uint8_t);
+    uint8_t readByteSPI(uint8_t subAddress);
+    uint8_t readByteWire(uint8_t address, uint8_t subAddress);
   public:
+    int8_t _csPin;
     float pitch, yaw, roll;
     float temperature;   // Stores the real internal chip temperature in Celsius
     int16_t tempCount;   // Temperature raw count output
@@ -232,8 +237,11 @@ class MPU9250
     float SelfTest[6];
     // Stores the 16-bit signed accelerometer sensor output
     int16_t accelCount[3];
-    
+
+
   public:
+    MPU9250();
+    MPU9250(uint8_t csPin);
     void getMres();
     void getGres();
     void getAres();
